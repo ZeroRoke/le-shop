@@ -1,0 +1,126 @@
+page{
+  padding-bottom:90rpx;
+}
+.address button{
+  font-weight: 400;
+  margin-top: 10rpx;
+}
+.address-detail{
+  display: flex;
+  padding: 20rpx;
+  justify-content: space-between;
+}
+
+.address-detail .telphone{
+  text-align: right;
+}
+.cart-wrap .cart-title{
+  padding:20rpx;
+  border-top:1rpx solid var(--themeColor);
+  border-bottom:1rpx solid var(--themeColor);
+}
+.cart-wrap .main .cart-item{
+  display: flex;
+  border-bottom: 1rpx solid #ccc;
+  padding: 5px;
+}
+.cart-wrap .main .cart-item .cart-checkbox{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-wrap .main .cart-item .cart-img{
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-wrap .main .cart-item .cart-img image{
+  width: 80%;
+}
+.cart-wrap .main .cart-item .cart-info{
+  flex: 4;
+}
+.cart-wrap .main .cart-item .cart-info .info-title{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color:#666;
+}
+.cart-wrap .main .cart-item .cart-info .cart-price-wrap{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40rpx;
+}
+.cart-wrap .main .cart-item .cart-info .cart-price-wrap .cart-price{
+  color:#ff0000;
+  font-size: 34rpx;
+}
+.cart-wrap .main .cart-item .cart-info .cart-price-wrap .cart-edit{
+  display: flex;
+}
+.cart-wrap .main .cart-item .cart-info .cart-price-wrap .cart-edit .num-edit{
+  border: 1rpx solid #ccc;
+  width: 40rpx;
+  height: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart-wrap .main .cart-item .cart-info .cart-price-wrap .num{
+  margin: 0 20rpx;
+}
+.show-text{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color:var(--themeColor);
+  font-weight: 600;
+  font-size: 40rpx;
+}
+/* <!-- 结算工具栏 -->*/
+.footer{
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 90rpx;
+}
+
+.tool-wrap{
+  display: flex;
+  height: 100%;
+  background: #fff;
+}
+.tool-wrap .tool-checkbox{
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tool-wrap .tool-total{
+  flex: 5;
+  text-align: right;
+  margin-right: 10rpx;
+}
+.tool-wrap .tool-total .tool-total-price .price{
+  color:#ff0000;
+  font-size: 34rpx;
+  font-weight: 600;
+}
+.tool-wrap .tool-total .tool-total-price .contain{
+  font-size: 20rpx;
+}
+.tool-wrap .tool-buy{
+  flex: 3;
+  background: #ff0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#fff;
+  font-weight: 600;
+}
+/* 结算工具栏结束 */

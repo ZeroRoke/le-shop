@@ -1,0 +1,48 @@
+/* pages/category/index.wxss */
+.scroll-container{
+  display: flex;
+  height: calc(100vh - 80rpx);
+}
+/* 左侧菜单 */
+.leftMenu{
+  flex: 2;
+  height: 100%;
+}
+.leftMenu .scroll-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rpx 0;
+  font-size: 30rpx;
+}
+/* 左侧菜单 结束 */
+/* 右侧内容 */
+.rightContent{
+  flex:5;
+}
+.rightContent .goods-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10rpx 0;
+}
+.rightContent .goods-title .some{
+  color: #ccc;
+  padding: 10rpx;
+}
+.active{
+  border-left: 5rpx solid var(--themeColor);
+  color:var(--themeColor)
+}
+.rightContent .goods-list{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  
+}
+.rightContent .goods-list navigator{
+  width: 33.333%;
+  text-align: center;
+}
+
+/* 右侧内容结束 */

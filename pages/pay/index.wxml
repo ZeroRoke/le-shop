@@ -1,0 +1,46 @@
+<!-- 收货地址 -->
+<view class="address-detail">
+  <view class="detail">
+    <view>{{address.provinceName+address.cityName+address.countyName+address.detailInfo }}</view>
+    <view>{{address.userName}}</view>
+  </view>
+  <view class="telphone">{{address.telNumber}}</view>
+</view>
+<!-- 收货地址结束 -->
+<!-- 购物车 -->
+<view class="cart-wrap">
+  <view class="cart-title">
+    <h2>购物车</h2>
+  </view>
+  <view class="main">
+      <view class="cart-item" wx:for='{{cart}}' wx:key='goods_id'>
+        <navigator class="cart-img">
+          <image class="" src="{{item.pics[0].pics_sma}}" mode="widthFix" />
+        </navigator>
+        <view class="cart-info">
+          <h4 class="info-title">{{item.goods_name}}</h4>
+          <view class="cart-price-wrap">
+            <view class="cart-price">￥{{item.goods_price*item.num}}</view>
+            <view class="cart-edit">
+              <view class="num">X {{item.num}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+  </view>
+</view>
+<!-- 购物车结束 -->
+<!-- 结算工具栏 -->
+<view class="footer">
+  <view class="tool-wrap">
+    <view class="tool-total">
+      <view class="tool-total-price">
+        合计:
+        <text class="price">￥ {{totalPrice}}</text>
+      </view>
+      <text class="contain">包含运费</text>
+    </view>
+    <view class="tool-buy" bindtap='payGoods'>支付({{totalNum}})</view>
+  </view>
+</view>
+<!-- 结算工具栏结束 -->

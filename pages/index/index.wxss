@@ -1,0 +1,45 @@
+swiper {
+  height: calc(100vw * 340 / 750);
+}
+swiper image {
+  width: 100%;
+}
+.categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.categories navigator {
+  flex: 1;
+  padding: 20rpx;
+}
+.categories navigator image {
+  width: 100%;
+}
+/* 楼层 开始*/
+.floor .floor-group  {
+  padding: 10rpx 0;
+}
+
+.floor .floor-list{
+  overflow: hidden;
+}
+.floor .floor-list navigator{
+  float: left;
+  width: 32.3333%;
+}
+.floor .floor-list navigator:nth-child(1){
+   height: calc(33.3333vw * 386 / 232 );
+}
+.floor .floor-list navigator:nth-child(n+2){
+  height: calc(33.3333vw * 386 / 232 / 2 );
+  border-left: 10rpx #fff solid;
+}
+.floor .floor-list navigator:nth-child(2),.floor .floor-list navigator:nth-child(3){
+  border-bottom: 10rpx #fff solid;
+}
+.floor .floor-list navigator image{
+  height: 100%;
+  width: 100%;
+} 
+/* 楼层 结束 */

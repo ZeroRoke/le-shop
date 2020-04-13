@@ -1,0 +1,20 @@
+<SearchBar />
+<Tabs tabs='{{tabs}}' bindhandleItemTap='handleItemTap'>
+  <block wx:if="{{tabs[0].isActive}}">
+    <view class="first-tab">
+      <navigator class="tab-item" wx:for="{{goods}}" wx:key="goods_id"
+      url="/pages/goods_detail/index?goods_id={{item.goods_id}}"
+      open-type="navigate">
+        <view class="img">
+          <image src="{{item.goods_small_logo?item.goods_small_logo:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2892358126,2287067489&fm=26&gp=0.jpg'}}" mode="widthFix"/>
+        </view>
+        <view class="goods-info">
+          <h4>{{item.goods_name}}</h4>
+          <p>￥{{item.goods_price}}</p>
+        </view>
+      </navigator>
+    </view>
+  </block>
+  <block wx:if="{{tabs[1].isActive}}">2</block>
+  <block wx:if="{{tabs[2].isActive}}">3</block>
+</Tabs>

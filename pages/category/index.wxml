@@ -1,0 +1,38 @@
+<view>
+    <SearchBar />
+    <view class="scroll-container">
+      <scroll-view scroll-y="{{true}}" class="leftMenu">
+        <view wx:for="{{leftMenuList}}" 
+        class="scroll-item {{index===currentIndex?'active':'' }}" 
+        bindtap='MenuItemTap'
+        data-index='{{index}}'
+        wx:for-index="index"
+        wx:key="index">
+          {{item}}
+        </view>
+      </scroll-view>
+      <!-- 右侧内容主体 -->
+      <scroll-view scroll-y="{{true}}" class="rightContent" scroll-top="{{scrollTop}}">
+        <view class="goods-group" wx:for="{{rightContent}}" 
+        wx:for-item="item1"
+        wx:key="cat_id" 
+        wx:for-index="index1">
+          <view class="goods-title">
+            <text class="some">/</text>
+            {{item1.cat_name}}
+            <text class="some">/</text>
+          </view>
+          <view class="goods-list">
+            <navigator  
+            url="/pages/goods_list/index?id={{item2.cat_id}}"
+            open-type="navigate"
+            wx:for="{{item1.children}}" wx:for-item="item2" wx:for-index="index2" wx:key="cat_id">
+              <image  src="{{item2.cat_icon}}" mode="widthFix"/>
+              <text>{{item2.cat_name}}</text>
+            </navigator>
+          </view>
+        </view>
+      </scroll-view>
+    
+    </view>
+</view>

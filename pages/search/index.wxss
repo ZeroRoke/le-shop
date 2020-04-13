@@ -1,0 +1,34 @@
+page{
+  padding: 10rpx;
+  background:#dcdedc;
+}
+.search-wrap{
+  height: 80rpx;
+  display: flex;
+}
+.search-wrap input{
+  flex: 1;
+  height: 100%;
+  background: #fff;
+  border-radius: 10rpx;
+}
+.search-wrap .btn{
+  height: 100%;
+  font-size: 24rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20rpx;
+}
+.search-content{
+  margin-top: 20rpx;
+}
+.search-content .search-item{
+  border-bottom: 2rpx solid #ccc;
+  padding: 14rpx 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background: #fff;
+}

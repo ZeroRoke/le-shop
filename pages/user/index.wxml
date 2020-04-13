@@ -1,0 +1,79 @@
+
+<view class="user-wrap">
+  <block wx:if="{{userInfo.avatarUrl}}">
+        <image src='{{userInfo.avatarUrl}}' class="user-bgImg" mode="widthFix" />
+    <view class="user-info">
+      <image src="{{userInfo.avatarUrl}}" class="user-icon" />
+      <view class="user-nickname">{{userInfo.nickName}}</view>
+    </view>
+  </block>
+    <navigator wx:else open-type="navigate" url='/pages/login/index'>
+登录</navigator>
+</view>
+<view class="footer-wrap">
+  <view class="main">
+    <view class="history-wrap">
+      <view class="history-item">
+        <view class="num">0</view>
+        <view class="title">收藏的店铺</view>
+      </view>
+      <view class="history-item">
+        <view class="num">0</view>
+        <view class="title">收藏的商品</view>
+      </view>
+      <view class="history-item">
+        <view class="num">0</view>
+        <view class="title">关注的商品</view>
+      </view>
+      <view class="history-item">
+        <view class="num">0</view>
+        <view class="title">我的足迹</view>
+      </view>
+    </view>
+    <view class="order-wrap">
+      <view class="order-title">我的订单</view>
+      <view class="order-list">
+        <view class="order-list-item">
+          <view>
+            <text class="iconfont icon-emaxcitygerenxinxitubiaoji03"></text>
+          </view>
+          <view class="order-text">全部订单</view>
+        </view>
+        <view class="order-list-item">
+          <view>
+            <text class="iconfont icon-pay"></text>
+          </view>
+          <view  class="order-text">待付款</view>
+        </view>
+        <view class="order-list-item">
+          <view>
+            <text class="iconfont icon-shouhuo"></text>
+          </view>
+          <view  class="order-text">待收货</view>
+        </view>
+        <view class="order-list-item">
+          <view>
+            <text class="iconfont icon-money3"></text>
+          </view>
+          <view  class="order-text">退款／退货</view>
+        </view>
+      </view>
+    </view>
+    <view class="address-wrap">收货地址管理</view>
+    <view class="tool-wrap">
+      <view class="tool-item tool-item-contact">
+        <text>联系客服</text>
+        <text>400-610-4000</text>
+      </view>
+      <view class="tool-item">
+        <button class="tool-item-feedback"  open-type="feedback">意见反馈</button>
+      </view>
+      <view class="tool-item tool-item-about">
+        <text>关于我们</text>
+      </view>
+    </view>
+    <view class="share-wrap">
+      把应用推荐给其他人
+    </view>
+  </view>
+</view>

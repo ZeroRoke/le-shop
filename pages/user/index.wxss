@@ -1,0 +1,131 @@
+.user-wrap{
+  position: relative;
+  background: var(--themeColor);
+  height: 45vh;
+}
+.user-wrap .user-bgImg{
+  filter: blur(10rpx);
+  height: 45vh!important;
+}
+.user-wrap .user-info{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+}
+.user-wrap .user-info image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.user-wrap .user-info .user-nickname{
+  color:#fff;
+  margin-top: 40rpx;
+  text-align: center;
+}
+.user-wrap navigator{
+  padding: 20rpx;
+  border-radius: 8rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+  position: absolute;
+  border:1rpx solid green
+}
+/* 用户信展示结束 */
+.footer-wrap{
+  position: relative;
+}
+.footer-wrap .main{
+  position: absolute;
+  width: 95%;
+  top: -45rpx;
+  left: 50%;
+  background: #ecebe8;
+  transform: translateX(-50%);
+  color:#666;
+  
+  padding-bottom: 100rpx;
+}
+.footer-wrap .main .history-wrap{
+  display: flex;
+  background: #fff;
+ 
+}
+.footer-wrap .main .history-wrap .history-item{
+  flex: 1;
+  text-align: center;
+  padding: 10rpx 0;
+}
+.footer-wrap .main .history-wrap .history-item .num{
+  color:#ff0000;
+}
+.footer-wrap .main .history-wrap .history-item .title{
+  font-size: 26rpx;
+}
+.footer-wrap .main .order-wrap
+{
+   margin: 20rpx 0;
+  background: #fff;
+}
+.footer-wrap .main .address-wrap{
+  background: #fff;
+ padding: 10rpx 0;
+}
+.footer-wrap .main .order-wrap .order-title{
+  padding: 10rpx 0;
+  background: #fff;
+  border-bottom: 5rpx solid #ecebe8;
+  padding-left: 13rpx;
+}
+.footer-wrap .main .order-wrap .order-list{
+  display: flex;
+  background: #fff;
+  padding: 10rpx 0;
+}
+.footer-wrap .main .order-wrap .order-list .order-list-item{
+  flex: 1;
+  text-align: center;
+}
+.footer-wrap .main .order-wrap .order-list .order-list-item .order-text{
+  font-size: 20rpx;
+}
+.footer-wrap .main .order-wrap .order-list .order-list-item .iconfont{
+  color:#ff0000;
+}
+.main .address-wrap{
+   padding: 10rpx 0 10px 13px;
+  margin-bottom: 20rpx;
+}
+.footer-wrap .main  .tool-wrap{
+  
+  background: #fff;
+}
+.main .tool-wrap  .tool-item{
+  padding: 14rpx 0;
+  border-bottom: 2rpx solid #ccc;
+}
+.main .tool-wrap .tool-item-about{
+  border-bottom:none;
+}
+.main .tool-wrap .tool-item-feedback{
+  border:none;
+  color:#666;
+  font-weight: normal;
+  background: transparent;
+  outline: 0;
+  font-size: 26rpx;
+  height: 100%;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+.main  .tool-wrap .tool-item-contact{
+  display: flex;
+  justify-content: space-between;
+}
+.main .share-wrap{
+  margin-top: 20rpx;
+  background: #fff;
+  padding: 14rpx 0 14rpx 13rpx;
+}
